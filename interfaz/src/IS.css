@@ -1,0 +1,105 @@
+/* LoginForm.css */
+.login-wrapper {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-container {
+    background-color: #d1d1d1;
+    border-radius: 3rem;
+    width: 340px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 8px;
+  }
+  
+  .logo-text {
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+  
+  .slogan {
+    color: #6366f1;
+    font-size: 0.75rem;
+    margin-bottom: 16px;
+  }
+  
+  .title {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dot {
+    color: #9333ea;
+    font-size: 20px;
+  }
+  
+  .form-group {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 12px;
+  }
+  
+  .form-group label {
+    color: black;
+    font-size: 0.875rem;
+  }
+  
+  .input {
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px;
+    border-radius: 9999px;
+    border: none;
+    outline: none;
+    background-color: white;
+  }
+  
+  .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 24px;
+  }
+  
+  .login-button {
+    background-color: black;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+  }
+  

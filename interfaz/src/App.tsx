@@ -1,14 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import Interface from './Interfaz';
+import Login from './InicioSesion';
 import Registro from './Registro';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={} />
-        <Route path="/Registro" element={<Registro></Registro>} />
+        <Route path="/" element={<Interface />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Registro />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 

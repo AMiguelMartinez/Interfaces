@@ -1,0 +1,35 @@
+body, html, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 56px; /* Altura del navbar de Bootstrap por defecto */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    z-index: 999;
+  }
+  
+  .app-layout {
+    display: flex;
+    margin-top: 56px; /* Deja espacio para la topbar */
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    height: calc(100vh - 56px);
+    width: calc(100% - 250px);
+    padding: 20px;
+  }
+

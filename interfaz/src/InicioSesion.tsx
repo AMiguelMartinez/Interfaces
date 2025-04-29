@@ -33,7 +33,7 @@ const Login: React.FC = () => {
           <a href="#">registrate</a>
         </div>
 
-        <button className="login-button" onClick={() => navigate("/home")}>Iniciar Sesion</button>
+        <button className="login-button" onClick={() => navigate("/Gestion")}>Iniciar Sesion</button>
       </div>
     </div>
   );

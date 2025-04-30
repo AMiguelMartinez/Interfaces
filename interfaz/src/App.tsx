@@ -10,6 +10,8 @@ import Registro from './Registro';
 import './App.css'; // Los estilos generales
 import ListaGestion from './ListaGestion';
 import Init from './Home';
+import ListaChequeo from './ListaChequeo';
+import ListaChequeoRecibida from './ListaRecibidaChequeo';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
@@ -38,6 +40,8 @@ const AppLayout: React.FC = () => {
                 <Route path="/gestion" element={<Gestiones />} />
                 <Route path="/ListaGestion" element={<ListaGestion />} />
                 <Route path="/Home" element={<Init />} />
+                <Route path="/ListaChequeo" element={<ListaChequeo />} />
+                <Route path="/ListaChequeoRecibida" element={<ListaChequeoRecibida />} />
                 
               </Routes>
             </Col>

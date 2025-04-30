@@ -9,22 +9,21 @@ import Gestiones from './gestion';
 import Registro from './Registro';
 import './App.css'; // Los estilos generales
 import ListaGestion from './ListaGestion';
+import Init from './Home';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
 
-  // Comprobamos si estamos en una ruta de autenticación o en la página de interfaz
   const isAuthRoute = location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/';
 
   return (
     <div className="app-container">
-      {/* Solo muestra Topbar y Sidebar si no estamos en rutas de login, register o Interface */}
       {!isAuthRoute && <Topbar />}
 
       <div className="app-layout">
         <Container fluid>
           <Row className="h-100">
-            {/* Sidebar solo visible si no estamos en rutas de login, register o Interface */}
+        
             {!isAuthRoute && (
               <Col xs={3} className="sidebar">
                 <Sidebar />
@@ -38,6 +37,7 @@ const AppLayout: React.FC = () => {
                 <Route path="/register" element={<Registro />} />
                 <Route path="/gestion" element={<Gestiones />} />
                 <Route path="/ListaGestion" element={<ListaGestion />} />
+                <Route path="/Home" element={<Init />} />
                 
               </Routes>
             </Col>

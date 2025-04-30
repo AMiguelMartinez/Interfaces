@@ -15,7 +15,7 @@ const Interface: React.FC = () => {
 
         <a href="#" className="forgot-password">¿Olvidaste la contraseña?</a>
 
-        <button className="start-button" onClick={() => navigate("/ListaGestion")}>Comenzar</button>
+        <button className="start-button" onClick={() => navigate("/Home")}>Comenzar</button>
       </div>
     </div>
   );

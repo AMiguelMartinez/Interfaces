@@ -1,17 +1,19 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap'; // Usamos Grid System de React Bootstrap
-import Sidebar from './Sidebar'; // Importamos el Sidebar
-import Topbar from './Topbar'; // Importamos el Topbar
+import { Container, Row, Col } from 'react-bootstrap';
+import Sidebar from './Sidebar'; 
+import Topbar from './Topbar';
 import Interface from './Interfaz';
 import Login from './InicioSesion';
 import Gestiones from './gestion';
 import Registro from './Registro';
-import './App.css'; // Los estilos generales
+import './App.css'; 
 import ListaGestion from './ListaGestion';
 import Init from './Home';
 import ListaChequeo from './ListaChequeo';
 import ListaChequeoRecibida from './ListaRecibidaChequeo';
+import LectorReportes from './Reportes';
+import ListaReportes from './ListaReportes';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
@@ -40,6 +42,8 @@ const AppLayout: React.FC = () => {
                 <Route path="/gestion" element={<Gestiones />} />
                 <Route path="/ListaGestion" element={<ListaGestion />} />
                 <Route path="/Home" element={<Init />} />
+                <Route path="/ListaReportes" element={<ListaReportes />} />
+                <Route path="/Reportes" element={<LectorReportes/>} />
                 <Route path="/ListaChequeo" element={<ListaChequeo />} />
                 <Route path="/ListaChequeoRecibida" element={<ListaChequeoRecibida />} />
                 

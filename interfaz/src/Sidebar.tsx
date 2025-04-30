@@ -10,10 +10,10 @@ const Sidebar: React.FC = () => {
                 <ListGroup variant="flush">
                     <ListGroup.Item className="bg-black text-white border-0" action href="Home">Home</ListGroup.Item>
                     <ListGroup.Item className="bg-black text-white border-0" action href="ListaGestion">Gestión EPP</ListGroup.Item>
-                    <ListGroup.Item className="bg-black text-white border-0" action href="#">Actividades Lúdicas</ListGroup.Item>
+                    <ListGroup.Item className="bg-black text-white border-0" action href="ListaAct">Actividades Lúdicas</ListGroup.Item>
                     <ListGroup.Item className="bg-black text-white border-0" action href="ListaChequeoRecibida">Lista de Chequeo</ListGroup.Item>
                     <ListGroup.Item className="bg-black text-white border-0" action href="ListaReportes">Reportes</ListGroup.Item>
-                    <ListGroup.Item className="bg-black text-white border-0" action href="#">Blog</ListGroup.Item>
+                    <ListGroup.Item className="bg-black text-white border-0" action href="Blog">Blog</ListGroup.Item>
                     <ListGroup.Item className="bg-black text-white border-0" action href="#">Asesoramiento</ListGroup.Item>
                 </ListGroup>
             </div>

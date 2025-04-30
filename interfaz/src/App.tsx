@@ -14,6 +14,10 @@ import ListaChequeo from './ListaChequeo';
 import ListaChequeoRecibida from './ListaRecibidaChequeo';
 import LectorReportes from './Reportes';
 import ListaReportes from './ListaReportes';
+import CrearPost from './CrearPost';
+import Blog from './Blog';
+import Formulario from './Act';
+import ListaAct from './ListaAct';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
@@ -33,7 +37,6 @@ const AppLayout: React.FC = () => {
                 <Sidebar />
               </Col>
             )}
-
             <Col xs={isAuthRoute ? 12 : 9} className="main-content">
               <Routes>
                 <Route path="/" element={<Interface />} />
@@ -42,8 +45,12 @@ const AppLayout: React.FC = () => {
                 <Route path="/gestion" element={<Gestiones />} />
                 <Route path="/ListaGestion" element={<ListaGestion />} />
                 <Route path="/Home" element={<Init />} />
+                <Route path="/CrearPost" element={<CrearPost />} />
+                <Route path="/Blog" element={<Blog />} />
                 <Route path="/ListaReportes" element={<ListaReportes />} />
                 <Route path="/Reportes" element={<LectorReportes/>} />
+                <Route path="/ListaAct" element={<ListaAct/>} />
+                <Route path="/Formulario" element={<Formulario/>} />
                 <Route path="/ListaChequeo" element={<ListaChequeo />} />
                 <Route path="/ListaChequeoRecibida" element={<ListaChequeoRecibida />} />
                 

@@ -18,6 +18,7 @@ import CrearPost from './CrearPost';
 import Blog from './Blog';
 import Formulario from './Act';
 import ListaAct from './ListaAct';
+import AsesoramientoApp from './Asesoramiento';
 
 const AppLayout: React.FC = () => {
   const location = useLocation();
@@ -49,6 +50,7 @@ const AppLayout: React.FC = () => {
                 <Route path="/Blog" element={<Blog />} />
                 <Route path="/ListaReportes" element={<ListaReportes />} />
                 <Route path="/Reportes" element={<LectorReportes/>} />
+                <Route path="/Asesoramiento" element={<AsesoramientoApp/>} />
                 <Route path="/ListaAct" element={<ListaAct/>} />
                 <Route path="/Formulario" element={<Formulario/>} />
                 <Route path="/ListaChequeo" element={<ListaChequeo />} />
